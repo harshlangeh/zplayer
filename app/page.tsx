@@ -2818,7 +2818,7 @@ const COLOR_VARIANTS: Record<string, string> = {
 }
 
 function ActionBtn({ onClick, title, color, children }: {
-  onClick: () => void; title: string; color: string; children: React.ReactNode
+  onClick: React.MouseEventHandler<HTMLButtonElement>; title: string; color: string; children: React.ReactNode
 }) {
   return (
     <button
